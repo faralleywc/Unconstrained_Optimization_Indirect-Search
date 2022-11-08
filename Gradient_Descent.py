@@ -53,7 +53,7 @@ class gradient_descent():
         return direction_list
 
     # 根据坐标值计算目标函数值
-    def target_calulate(self, x):
+    def target_calculate(self, x):
         X = self.symbol_variable()
         y = self.function.evalf(subs = dict(zip(X, x)))
         return y
